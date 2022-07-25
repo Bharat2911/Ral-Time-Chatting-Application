@@ -1,6 +1,6 @@
 # Ral-Time-Chatting-Application
  It is an scalable Realtime Chatting Application that provides an interface for multiple user chatting at the same time.
-FrontEnd Technologies- HTML, CSS
+ FrontEnd Technologies- HTML, CSS
 BackEnd Technologies- JavaScript, Node.js
 Used Socket.io module for a two-way connection between client and server.
 FrontEnd includes a navigation bar, Chat window and a form submit button for sending the messages.
@@ -17,3 +17,13 @@ Server Side JavaScript will handle the Socket IO connections.
 If a new user joins, let the other users connected with server know.
 If someone sends the message, broadcast it to other people.
 If someone leaves the chat, let others know.
+
+#What are WebSockets?
+WebSockets are quite an interesting technology in and of itself. Let’s take a closer look at what it is.
+
+#WebSocket definition
+WebSockets API is a technology providing a bidirectional communication channel between a client and a server. That means that the client no longer needs to be an initiator of a transaction while requesting data from both the server and database.
+
+
+#How do WebSockets work?
+Typically, the client requests data starting a new connection and then the client loses connection. The server sending data also only has connection during the exchange. With WebSockets, during the first request to the backend server, except receiving incoming data, the socket.io client also establishes an initial connection. This process is known as the WebSocket handshake. 🤝 The Upgrade header is included in the request. That’s how the client connected informs the server that it needs to create a connection.
